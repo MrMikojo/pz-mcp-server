@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "pz-modding": {
+      "type": "local",
+      "command": ["python", "-m", "pz_modding_mcp"],
+      "environment": { "PZ_DIR": "C:/Program Files (x86)/Steam/steamapps/common/ProjectZomboid" },
+      "enabled": true
+    }
+  }
+}

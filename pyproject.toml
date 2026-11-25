@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pz-modding-mcp"
+version = "1.0.0"
+description = "MCP server that checks Project Zomboid (Build 42) modding names against your installed game"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2"]
+keywords = ["project-zomboid", "modding", "mcp", "lua"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+pz-modding-mcp = "pz_modding_mcp.server:main"
+
+[tool.setuptools]
+packages = ["pz_modding_mcp"]
